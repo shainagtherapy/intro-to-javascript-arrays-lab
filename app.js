@@ -63,7 +63,6 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-//foods.splice(1 2, 'tofu') //push inside another array???***************************
 foods.splice(2, 0, 'tofu');
 
 console.log('Exercise 5 result:', foods);
@@ -107,10 +106,10 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-//const foods.indexOf('tofu')
-const soyIdx = foods.indexOf('tofu')  //*******************STUCK HERE 
-
-console.log(foods.indexOf)
+//const food.indexOf('tofu')
+//const soyIdx = foods.indexOf('tofu')  //*******************STUCK HERE 
+const soyIdx = (foods.indexOf('tofu'))
+//console.log(foods.indexOf(tofu))
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -237,7 +236,9 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
-//console.log('Exercise 13 result:', numList);
+const numList = (numArrays[3])
+
+console.log('Exercise 13 result:', numList);
 
 /*
 Exercise 14: Accessing within nested arrays
@@ -250,9 +251,9 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
+const num = (numArrays[2][1])
 
-
-//console.log('Exercise 14 result:', num);
+console.log('Exercise 14 result:', num);
 
 /*
 Exercise 15: Nested array sum
@@ -267,16 +268,21 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 Complete Exercise 15 in the space below:
 */
 
-
-
-//console.log('Exercise 15 result:\n', total);
+let total = 0
+   for (i = 0; i < numArrays.length; i++) {
+      for (let j = 0; j < numArrays[i].length; j++ ) {
+         total += numArrays [i][j];
+         //total = numArrays [i] + [j] ********* why doesn't this work?
+      }
+   }
+console.log('Exercise 15 result:', total);
 
 
 
 
 // Arrays lecture
 
-const movies = [
+/*const movies = [
    'Princess Bride', 
    'The Lost Boys', 
    'Elf'
@@ -333,3 +339,4 @@ console.log(books[1])
 
 books[1] = 'Dune'
 console.log(books)
+*/
