@@ -6,9 +6,9 @@ Exercise 1: Define an empty array
 Exercise 1 has been completed for you:
 */
 
-// const foods = [];  
+//const foods = [];  
 
-// console.log('Exercise 1 result:', foods);
+//console.log('Exercise 1 result:', foods);
 
 /*
 Exercise 2: Add strings to the array
@@ -52,8 +52,6 @@ Complete Exercise 4 in the space below:
 foods[1]
 
 const favFood = foods[1];
-
-console.log(foods);
 
 console.log('Exercise 4 result:', favFood);
 
@@ -109,9 +107,12 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
+//const foods.indexOf('tofu')
+const soyIdx = foods.indexOf('tofu')  //*******************STUCK HERE 
 
+console.log(foods.indexOf)
 
-//console.log('Exercise 8 result:', soyIdx);
+console.log('Exercise 8 result:', soyIdx);
 
 /*
 Exercise 9: Joining elements
@@ -142,9 +143,9 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
+const hasSoup = foods.includes('soup')
 
-
-//console.log('Exercise 10 result:', hasSoup);
+console.log('Exercise 10 result:', hasSoup);
 
 /*
 Exercise 11: Odd numbers from an array
@@ -160,9 +161,14 @@ Complete Exercise 11 in the space below:
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
 
-
-
-//console.log('Exercise 11 result:', odds);
+const odds= [];
+//let odds= (i)
+for (let i = 0; i < nums.length; i++) {
+   if (nums[i] % 2 === 1) {
+      odds.push(nums[i])
+   }
+}
+console.log('Exercise 11 result:', odds);
 
 /*
 Exercise 12: FizzBuzz with arrays
@@ -183,12 +189,34 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
+const fizz = []
+   for (let a = 0; a < nums.length; a++) {
+      if (nums[a] % 3 === 0) {
+         fizz.push(nums[a])
+      }
+   }
 
+const buzz = []
+   for (let b = 0; b < nums.length; b++) {
+      if (nums[b] % 5 === 0) {
+         buzz.push(nums[b])
+      }
+   }
 
-//console.log('Exercise 12 Results:');
-//onsole.log('  fizz:', fizz);
-//console.log('  buzz:', buzz);
-//console.log('  fizzbuzz:', fizzbuzz);
+const fizzbuzz = []
+   for (let c = 0; c < nums.length; c++) {
+      if (nums[c] % 3 === 0 && nums[c] % 5 === 0) {
+         fizzbuzz.push(nums[c])
+
+      // } else if (nums[c] % 5 === 0) {
+      //    fizzbuzz.push(nums[c])
+      }
+   }
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
 
 /*
 Exercise 13: Retrieve the Last Array
